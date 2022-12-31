@@ -18,46 +18,50 @@ export const Main = () => {
          <div className='hero_img'> <img src='images/illustration-working.svg' alt='' /></div>
         </div>
         </section>
-        {/* <section>
-          <input />
-          <button className='btn input_btn'> shorten it?</button>
-        </section> */}
+        <section className='input_section'>
+          <article className='input_container'>
+            <input placeholder='Shorten a link here ...'/>
+            <button className='btn input_btn'> shorten it?</button>
+          </article>
+        </section>
 
-        {/* <section className='cards_section'>
+        <section className='cards_section'>
           <div className='card_container'>
             <div className='card_intro_section'>
-              <h2></h2>
-              <p></p>
+              <h2>Advanced Statistics</h2>
+              <p>Track how your links are performing across the web with our advanced statistics dashboard. </p>
             </div>
         
           <div className='cards'>
 
-          <div className='left_grid>
-            <div className='card>
-              <img src='' alt=''/>
-              <h3></h3>
-              <p></p>
-            </div>
-             </div>
-
-            <div className='center_grid>
-             <div className='card>
-              <img src='' alt='' />
-              <h3></h3>
-              <p></p>
-              </div>
-            </div>
-
-            <div className='right_grid>
-             <div className='card>
-              <img src='' alt='' />
-              <h3></h3>
-              <p></p>
-              </div>
-            </div>
+          <div className='left_grid'>
+            {/* <div className='left_card'> */}
+            <div className='card '>
+              <img src='/images/icon-brand-recognition.svg' alt='brand recognition' className='card_img' />
+                <h3> Brand Recognition </h3>
+                <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content. </p>
+           </div>
+           {/* </div> */}
           </div>
-        </div>
-        </section> */}
+            <div className='center_grid'>
+              <div className='card center_card'>
+                <img src='/images/icon-detailed-records.svg' alt='detailed records' className='card_img'/>
+                <h3>Detailed Records</h3>
+                <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+              </div>
+            </div>
+
+            <div className='right_grid'>
+              <div className='card'>
+                <img src='/images/icon-fully-customizable.svg' alt='fully customizable'  className='card_img'/>
+                <h3>  Fully Customizable</h3>
+                <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+              </div>
+            </div>
+
+          </div>
+         </div>
+        </section>
 
       <section className='banner'>
         <div className="banner_text">

@@ -8,6 +8,7 @@ $Dark-Violet: hsl(257, 27%, 26%);
 //  ### Neutral 
 $Gray: hsl(0, 0%, 75%);
 $Grayish-Violet: hsl(257, 7%, 63%); 
+$Grayish-Violet-bg: hsla(258, 7%, 63%, 0.293);
 $Very-Dark-Blue: hsl(255, 11%, 22%); 
 $Very-Dark-Violet: hsl(260, 8%, 14%);
 
@@ -15,6 +16,16 @@ $Very-Dark-Violet: hsl(260, 8%, 14%);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@mixin bottom-content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+@mixin top-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 @mixin left-content {
     display: flex;
@@ -29,7 +40,7 @@ $Very-Dark-Violet: hsl(260, 8%, 14%);
 @mixin container {
     max-width:95%;
     @media (width > 700) {
-        max-width: 75%;
+        max-width: 70%;
     }
 }
 @mixin button {

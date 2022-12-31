@@ -5,10 +5,17 @@
     padding:2em 0 .7rem ;
     position:fixed;
     width:100%;
+    z-index: 1999;
     @include center-content();
     background-color: white;
 }
-
+.nav_btn{
+    border:none;
+    background: transparent;
+}
+.toggle, button, .items{
+    cursor: pointer;
+}
 .toggle{
     display: flex;
     align-items: center;
@@ -61,6 +68,7 @@
         }
         &.desktopnav_items:nth-child(5){
             color:white;
+            cursor: pointer;
             padding:.5rem 2rem;
             border-radius: 10rem;
             background-color:$Cyan;

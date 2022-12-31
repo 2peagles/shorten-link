@@ -6,8 +6,8 @@ const Navbar = () => {
     const handleClick = () => setMenu(!menu);
 
   return (
-    <div className="navcontainer">
-        <div className='desktopnav container'>
+    <header className="navcontainer">
+        <nav className='desktopnav container'>
               <span><img src='/images/logo.svg' alt='logo ' /></span>
               <div className='desktopnav'>
               {NavData.map((item, index) => {
@@ -18,31 +18,30 @@ const Navbar = () => {
                   )
               })}
               </div>
-        </div>
+        </nav>
 
 
-    <div className='mobilenav container'>
+    <nav className='mobilenav container'>
         <div onClick={handleClick} className='toggle'>
               <span><img src='/images/logo.svg' alt='logo '/></span>
-              <div>
+              <button className='nav_btn'>
                   {!menu ?
                       <img src='/images/icon-hamburger.svg' alt=' open menu' />
                       : <img src='/images/icon-close.svg' alt=' exit' />
                   }
-              </div>
+              </button>
             </div>
           <div className={!menu ? 'hidden' : 'visible'}>
             {NavData.map((item, index)=>{
                 return(
-                    <nav>
-                        {/* <span><img src='/images/logo.svg' alt='logo '/></span> */}
-                        <span key={index} item={item.title}>{item.title}</span>
-                    </nav>
+                    <div>
+                        <span key={index} item={item.title} className='items'>{item.title}</span>
+                    </div>
                 )
             })}
-        </div>
-    </div>
-    </div>
+            </div>
+        </nav>
+    </header>
   )
 }
 
