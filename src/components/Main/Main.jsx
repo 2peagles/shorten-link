@@ -18,11 +18,14 @@ export const Main = () => {
          <div className='hero_img'> <img src='images/illustration-working.svg' alt='' /></div>
         </div>
         </section>
+
         <section className='input_section'>
-          <article className='input_container'>
-            <input placeholder='Shorten a link here ...'/>
-            <button className='btn input_btn'> shorten it?</button>
-          </article>
+          <form className='input_container'>
+            <div>
+              <input placeholder='Shorten a link here ...'  required
+                  type='text' /></div>
+            <button className='btn input_btn'> shorten it!</button>
+          </form>
         </section>
 
         <section className='cards_section'>
@@ -64,13 +67,13 @@ export const Main = () => {
         </section>
 
       <section className='banner'>
-        <div className="banner_text">
+        <article className="banner_text">
           <h4>Boost your links today</h4>
           <button className='btn'> get started </button>
-        </div>
+        </article>
       </section>
 
-      <section className='footer_section'>
+      <footer className='footer_section'>
         <div className='footer_container'>
           <span className='footer_logo'><img src='/images/logo-footer.svg' alt='logo ' /></span>
           <div className='footer_nav'>
@@ -88,7 +91,7 @@ export const Main = () => {
             <li><img src='/images/icon-instagram.svg' alt='social media facebook icon' /></li>
           </ol>
         </div>
-      </section>
+      </footer>
     </main>
   )
 }
