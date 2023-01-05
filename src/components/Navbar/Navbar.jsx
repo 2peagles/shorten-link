@@ -9,7 +9,7 @@ const Navbar = () => {
     <header className="navcontainer">
         <nav className='desktopnav container'>
               <span><img src='/images/logo.svg' alt='logo ' /></span>
-              <div className='desktopnav'>
+              <div className='desktopnav_nav_container'>
               {NavData.map((item, index) => {
                   return (
                       <nav className='desktopnav_items'>

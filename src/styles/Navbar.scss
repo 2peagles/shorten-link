@@ -40,19 +40,16 @@
 .desktopnav{
     display: none;
 }
-@media (width > 1200px){
+@media (width > 800px){
     .toggle, .mobilenav{
         display: none;
     }
     .desktopnav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .desktop_items {
-        display: inline-block;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
     }
     .desktopnav_items{
+        display: inline-block;
         margin:0 1rem;
         color:$Grayish-Violet;
         text-transform: capitalize;
@@ -60,11 +57,13 @@
             color:$Dark-Violet;
             transition: 1s;
         }
-        &.desktopnav_items:nth-child(4){
-            margin: auto auto auto 25em;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+        &.desktopnav_items:nth-last-of-type(-n+2){
+            float:right;
+            margin-left:auto;
+            // width:fit-content;
+            // display:flex;
+            // align-items: center;
+            // justify-content: right;
         }
         &.desktopnav_items:nth-child(5){
             color:white;
