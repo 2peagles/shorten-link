@@ -13,7 +13,7 @@ const Navbar = () => {
               {NavData.map((item, index) => {
                   return (
                       <nav className='desktopnav_items'>
-                          <span key={index} item={item.title}>{item.title}</span>
+                          <span key={index}>{item.title}</span>
                       </nav>
                   )
               })}
