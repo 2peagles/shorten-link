@@ -1,5 +1,4 @@
 @import './global';
-// *{border:2px solid black;}
 
 .navcontainer{
     padding:2em 0 .7rem ;
@@ -48,6 +47,9 @@
         display: grid;
         grid-template-columns: 1fr 8fr;
     }
+    .desktopnav_nav_container{
+        text-align: right;
+    }
     .desktopnav_items{
         display: inline-block;
         margin:0 1rem;
@@ -57,13 +59,9 @@
             color:$Dark-Violet;
             transition: 1s;
         }
-        &.desktopnav_items:nth-last-of-type(-n+2){
-            float:right;
-            margin-left:auto;
-            // width:fit-content;
-            // display:flex;
-            // align-items: center;
-            // justify-content: right;
+        &.desktopnav_items:nth-child(-n+3){
+            float:left;
+            margin-top:.5rem;
         }
         &.desktopnav_items:nth-child(5){
             color:white;
@@ -78,10 +76,3 @@
         }
     }
 }
-// @media (width > 1200px){
-//     .desktopnav{
-//         &.desktop_items:nth-child(4){
-//             margin: auto auto auto 25rem;
-//         }
-//     }
-// }

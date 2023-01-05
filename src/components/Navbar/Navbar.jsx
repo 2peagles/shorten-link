@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className="navcontainer">
         <nav className='desktopnav container'>
-              <span><img src='/images/logo.svg' alt='logo ' /></span>
+              <span className='mainnav_logo'><img src='/images/logo.svg' alt='logo ' /></span>
               <div className='desktopnav_nav_container'>
               {NavData.map((item, index) => {
                   return (
@@ -35,7 +35,7 @@ const Navbar = () => {
             {NavData.map((item, index)=>{
                 return(
                     <div>
-                        <span key={index} item={item.title} className='items'>{item.title}</span>
+                        <span key={index} item={item.title} >{item.title}</span>
                     </div>
                 )
             })}

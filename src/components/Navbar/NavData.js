@@ -15,11 +15,3 @@ export const NavData = [
         title: 'sign up',
     },
 ]
-// export const RightNav = [
-//     {
-//         title: 'login',
-//     },
-//     {
-//         title: 'sign up',
-//     }
-// ]
